@@ -16,13 +16,6 @@
 .bold {
   font-weight: bold;
 }
-
-.slideAnimation {
-  animation: slide linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
-
 @keyframes slide {
   from {
     opacity: 0;
@@ -33,12 +26,12 @@
     transform: translateX(0px);
   }
 }
-
-.appearAnimation {
-  animation: appear linear;
+.slideAnimation {
+  animation: slide linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
+
 
 @keyframes appear {
   from {
@@ -50,6 +43,13 @@
     opacity: 1;
   }
 }
+.appearAnimation {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+
 
 .navbar {
   justify-content: space-between;
